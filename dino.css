@@ -1,0 +1,28 @@
+#dino {
+    max-width: 100px;
+    position: relative;
+    top: 150px;
+    transform: scaleX(-1);
+}
+
+.ativo {
+    animation: jump-dino 1s ease-in-out infinite;
+}
+
+@keyframes jump-dino {
+    0% {
+        top: 150px;
+    }
+
+    35% {
+        top: 00px;
+    }
+
+    50% {
+        top: 00px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}

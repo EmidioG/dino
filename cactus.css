@@ -1,0 +1,16 @@
+#cacto {
+    max-width: 50px;
+    position: relative;
+    top: 150px;
+    left: 1000px;
+    animation: move-cactus 2s linear infinite;
+}
+
+@keyframes move-cactus {
+    from {
+        left: 1000px;
+    }
+    to {
+        left: -1000px;
+    }
+}
