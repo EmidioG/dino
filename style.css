@@ -1,20 +1,4 @@
 @import url(cactus.css);
 @import url(dino.css);
 @import url(jogo.css);
-
-#passáro {
-    max-width: 100px;
-    position: relative;
-    top: 75px;
-    left: 1000px;
-    animation: move-bird 5s linear infinite;
-}
-
-@keyframes move-bird {
-    from {
-        left: 1000px;
-    }
-    to {
-        left: -10000px;
-    }
-}
+@import url(pássaro.css);

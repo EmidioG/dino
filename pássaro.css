@@ -1,0 +1,16 @@
+#passáro {
+  max-width: 100px;
+  position: absolute;
+  top: 175px;
+  left: 1000px;
+  animation: move-bird 5s linear infinite;
+}
+
+@keyframes move-bird {
+  from {
+    left: 1000px;
+  }
+  to {
+    left: -10000px;
+  }
+}

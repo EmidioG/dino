@@ -1,28 +1,43 @@
 #dino {
-    max-width: 100px;
-    position: relative;
-    top: 150px;
-    transform: scaleX(-1);
+  content: "";
+  width: 100px;
+  height: 115px;
+  position: relative;
+  top: 150px;
+  display: inline-block;
+  transform: scaleX(-1);
+  background-image: url(assets/dino.png);
+  background-size: contain;
 }
 
-.ativo {
-    animation: jump-dino 1s ease-in-out infinite;
+.dinoJump {
+  animation: jump-dino 1s ease-in-out infinite;
+}
+
+#dino.dinoDown {
+  background-image: url(assets/dinoDown.png);
+  height: 75px;
+  top: 190px;
+  width: 150px;
+  transform: scaleX(1);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @keyframes jump-dino {
-    0% {
-        top: 150px;
-    }
+  0% {
+    top: 150px;
+  }
 
-    35% {
-        top: 00px;
-    }
+  35% {
+    top: 00px;
+  }
 
-    50% {
-        top: 00px;
-    }
+  50% {
+    top: 00px;
+  }
 
-    100% {
-        top: 150px;
-    }
+  100% {
+    top: 150px;
+  }
 }
