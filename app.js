@@ -1,6 +1,7 @@
 let dino = document.querySelector("#dino");
 let cacto = document.querySelector("#cacto");
 let passaro = document.querySelector("#passáro");
+let p = document.querySelector("p")
 let pontuacao = 0;
 
 let button = document.querySelector('button')
@@ -18,6 +19,8 @@ document.addEventListener("keydown", (e) =>{
 })
 
 
+
+
 function verificaColisao() {
   let dinoPosicao = dino.getBoundingClientRect();
   let cactoPosicao = cacto.getBoundingClientRect();
@@ -29,7 +32,9 @@ function verificaColisao() {
     dinoPosicao.top < cactoPosicao.top + cactoPosicao.height &&
     dinoPosicao.top + dinoPosicao.height > cactoPosicao.top
   ) {
-    alert("Game Over");
+    alert(`Game Over você fez ${pontuacao} pontos`);
+    
+    pontuacao = 0
   }
 
   if (
@@ -38,7 +43,8 @@ function verificaColisao() {
     dinoPosicao.top < passaroPosicao.top + passaroPosicao.height &&
     dinoPosicao.top + dinoPosicao.height > passaroPosicao.top
   ) {
-    alert("Game Over");
+    alert(`Game Over você fez ${pontuacao} pontos`);
+    pontuacao = 0
   }
 }
 
@@ -69,5 +75,6 @@ document.addEventListener("keydown", (e) => {
 
 setInterval(() => {
   pontuacao++;
+  p.innerHTML = "Pontuação:" + pontuacao
   verificaColisao();
 }, 100);
