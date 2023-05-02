@@ -1,0 +1,48 @@
+body {
+    background-image: url("https://i.pinimg.com/736x/4e/60/d2/4e60d212a0ba83ec845c8013d9a3f94b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    color: #01c00e;
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif ;
+    /* Título "Google Dinosaur Game" */
+}
+
+.btn {
+    padding: 15px 150px;
+    font-size: 40px;
+    color: #e7e7e7;
+    text-decoration: none;
+    background: #5b5b5b;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    /* Botão "Iniciar jogo" */
+}
+
+.btn:hover {
+    color:#5b5b5b;
+    border: 1px solid black;
+    transition: 0.7s;
+    filter: drop-shadow(0 0 0.50rem rgb(104, 255, 127));
+    background: rgb(104, 255, 127);
+}
+
+.iniciar_jogo {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    /* Alinhamento do centro referente ao botao "Iniciar jogo" */
+}
+
+.creditos {
+    text-align: center;
+    margin-top: 15px;
+    /* Alinhamento do centro referente ao botao "Créditos" */
+}
