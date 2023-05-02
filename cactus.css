@@ -4,7 +4,6 @@
   top: 215px;
   left: 1000px;
   animation: move-cactus 2s linear infinite;
-  overflow: hidden;
 }
 
 @keyframes move-cactus {
