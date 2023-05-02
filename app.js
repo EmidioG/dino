@@ -10,6 +10,12 @@ button.addEventListener('click', function trocaPersonagem(){
   document.body.classList.toggle('goku')
 });
 
+document.addEventListener("keydown", (e) =>{
+  if (e.key == "t"){
+    dino.classList.toggle('goku');
+  document.body.classList.toggle('goku')
+  }
+})
 
 
 function verificaColisao() {
@@ -41,13 +47,18 @@ document.addEventListener("keydown", (e) => {
     e.key == " " ||
     (e.key == "ArrowUp" && dino.classList.contains("dinoDown") === false)
   ) {
-    dino.classList.add("dinoJump");
+    dino.classList.add("dinoSobe");
     setTimeout(() => {
-      dino.classList.remove("dinoJump");
-    }, 800);
+      dino.classList.remove("dinoSobe");
+      dino.classList.add("dinoDesce");
+      setTimeout(() => {
+        dino.classList.remove("dinoDesce");
+      }, 300);
+    }, 350);
+    
   } else if (
     e.key == "ArrowDown" &&
-    dino.classList.contains("dinoJump") === false
+    dino.classList.contains("dinoSobe") === false
   ) {
     dino.classList.add("dinoDown");
     document.addEventListener("keyup", () => {

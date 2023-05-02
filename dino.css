@@ -16,8 +16,12 @@
   transform: scaleX(1);
 }
 
-.dinoJump {
-  animation: jump-dino 0.8s ease-in-out infinite;
+.dinoSobe {
+  animation: sobe-dino 0.4s ease-in-out infinite;
+}
+
+.dinoDesce {
+  animation: desce-dino 0.4s ease-in-out infinite;
 }
 
 #dino.dinoDown {
@@ -34,17 +38,19 @@
   background-image: url(assets/Goku-Agachado-PNG.png);
 }
 
-@keyframes jump-dino {
+@keyframes sobe-dino {
   0% {
     top: 150px;
   }
 
-  35% {
-    top: 00px;
+  100% {
+    top: 0px;
   }
+}
 
-  50% {
-    top: 00px;
+@keyframes desce-dino {
+  0% {
+    top: 0px;
   }
 
   100% {
