@@ -9,10 +9,6 @@ body {
     text-align: center;
     margin-top: 9rem;
     font-size: 70px;
-    @font-face {
-        font-family: 'Gimme-Danger';
-        src: url('/');
-    }
     /* Título "Google Dinosaur Game" */
 }
 

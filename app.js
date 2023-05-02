@@ -3,6 +3,15 @@ let cacto = document.querySelector("#cacto");
 let passaro = document.querySelector("#passáro");
 let pontuacao = 0;
 
+let button = document.querySelector('button')
+
+button.addEventListener('click', function trocaPersonagem(){
+  dino.classList.toggle('goku');
+  document.body.classList.toggle('goku')
+});
+
+
+
 function verificaColisao() {
   let dinoPosicao = dino.getBoundingClientRect();
   let cactoPosicao = cacto.getBoundingClientRect();

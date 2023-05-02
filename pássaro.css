@@ -3,7 +3,7 @@
   position: absolute;
   top: 175px;
   left: 1000px;
-  animation: move-bird 5s linear infinite;
+  animation: move-bird 7s linear infinite;
 }
 
 @keyframes move-bird {

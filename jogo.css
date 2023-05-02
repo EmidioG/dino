@@ -16,3 +16,56 @@
   padding: 4rem;
   border: 2px solid black;
 }
+
+body.goku{
+
+  background-image: url("/imgs/goku-ultra-instinct.gif") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+a {
+    
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 15px 150px;
+  font-size: 40px;
+  color: #e7e7e7;
+  text-decoration: none;
+  background-image: url("https://i.pinimg.com/originals/64/89/e0/6489e0cc228eeef1fb7ba171cd30ce44.jpg");
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+/* Botão "Iniciar jogo" */
+}
+a:hover {
+    color:#5b5b5b;
+    border: 1px solid black;
+    transition: 0.7s;
+    filter: drop-shadow(0 0 0.50rem rgb(104, 255, 127));
+    background: rgb(104, 255, 127);
+}
+
+.tela_principal{
+    text-align: center;
+}
+.person_center{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+button {
+  padding: 15px 30px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+button:hover {
+  background: rgb(163, 241, 255);
+  transition: 0.4s;
+  outline: 1px solid black;
+}

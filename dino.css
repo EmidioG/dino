@@ -8,6 +8,12 @@
   transform: scaleX(-1);
   background-image: url(assets/dino.png);
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#dino.goku{
+  background-image: url(imgs/goku.gif);
+  transform: scaleX(1);
 }
 
 .dinoJump {
@@ -20,8 +26,12 @@
   top: 190px;
   width: 150px;
   transform: scaleX(1);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+
+#dino.goku.dinoDown{
+  background-image: url(assets/Goku-Agachado-PNG.png);
 }
 
 @keyframes jump-dino {
