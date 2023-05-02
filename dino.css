@@ -11,7 +11,7 @@
 }
 
 .dinoJump {
-  animation: jump-dino 1s ease-in-out infinite;
+  animation: jump-dino 0.8s ease-in-out infinite;
 }
 
 #dino.dinoDown {

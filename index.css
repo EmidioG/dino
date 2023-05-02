@@ -14,6 +14,13 @@ a {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 /* Botão "Iniciar jogo" */
 }
+a:hover {
+    color:#5b5b5b;
+    border: 1px solid black;
+    transition: 0.7s;
+    filter: drop-shadow(0 0 0.50rem rgb(104, 255, 127));
+    background: rgb(104, 255, 127);
+}
 
 .tela_principal{
     text-align: center;
