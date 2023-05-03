@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
 }
 
-#dino.goku{
+#dino.goku {
   background-image: url(imgs/goku.gif);
   transform: scaleX(1);
 }
@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
 }
 
-#dino.goku.dinoDown{
+#dino.goku.dinoDown {
   background-image: url(assets/Goku-Agachado-PNG.png);
 }
 

@@ -1,25 +1,22 @@
 let dino = document.querySelector("#dino");
 let cacto = document.querySelector("#cacto");
 let passaro = document.querySelector("#passáro");
-let p = document.querySelector("p")
+let p = document.querySelector("p");
 let pontuacao = 0;
 
-let button = document.querySelector('button')
+let button = document.querySelector("button");
 
-button.addEventListener('click', function trocaPersonagem(){
-  dino.classList.toggle('goku');
-  document.body.classList.toggle('goku')
+button.addEventListener("click", function trocaPersonagem() {
+  dino.classList.toggle("goku");
+  document.body.classList.toggle("goku");
 });
 
-document.addEventListener("keydown", (e) =>{
-  if (e.key == "t"){
-    dino.classList.toggle('goku');
-  document.body.classList.toggle('goku')
+document.addEventListener("keydown", (e) => {
+  if (e.key == "t") {
+    dino.classList.toggle("goku");
+    document.body.classList.toggle("goku");
   }
-})
-
-
-
+});
 
 function verificaColisao() {
   let dinoPosicao = dino.getBoundingClientRect();
@@ -33,8 +30,8 @@ function verificaColisao() {
     dinoPosicao.top + dinoPosicao.height > cactoPosicao.top
   ) {
     alert(`Game Over você fez ${pontuacao} pontos`);
-    
-    pontuacao = 0
+
+    pontuacao = 0;
   }
 
   if (
@@ -44,7 +41,7 @@ function verificaColisao() {
     dinoPosicao.top + dinoPosicao.height > passaroPosicao.top
   ) {
     alert(`Game Over você fez ${pontuacao} pontos`);
-    pontuacao = 0
+    pontuacao = 0;
   }
 }
 
@@ -61,7 +58,6 @@ document.addEventListener("keydown", (e) => {
         dino.classList.remove("dinoDesce");
       }, 300);
     }, 350);
-    
   } else if (
     e.key == "ArrowDown" &&
     dino.classList.contains("dinoSobe") === false
@@ -75,6 +71,6 @@ document.addEventListener("keydown", (e) => {
 
 setInterval(() => {
   pontuacao++;
-  p.innerHTML = "Pontuação:" + pontuacao
+  p.innerHTML = "Pontuação:" + pontuacao;
   verificaColisao();
 }, 100);
